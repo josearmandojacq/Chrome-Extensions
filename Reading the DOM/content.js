@@ -6,9 +6,11 @@ let width = '535px';
 
 
 anchors.forEach((anchor)=>{
+    
     const anchorUrls  = anchor.getAttribute('href');
     let searched = anchorUrls.search(searchPattern);
 
+    //check if the url matched which the one searched
     if (searched !== -1){
         const topParent = anchor.closest('div');
         
