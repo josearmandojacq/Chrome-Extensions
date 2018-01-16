@@ -7,6 +7,7 @@ let searchPattern = /https?\:\/\/(www.)(goertz|schuhcenter)\.(de)/g;
 anchors.forEach((anchor)=>{
     
     const anchorUrls  = anchor.getAttribute('href');
+    
     console.log(anchorUrls, anchor);
     let searched = anchorUrls.search(searchPattern);
 
@@ -16,8 +17,8 @@ anchors.forEach((anchor)=>{
         
         //Creating the icon
         let icon = document.createElement('img');
-        icon.setAttribute('src', 'https://cdn1.iconfinder.com/data/icons/smiley-8/512/1_smiley-64.png');
-        
+        icon.setAttribute('src', 'https://image.flaticon.com/icons/svg/10/10164.svg');
+        icon.setAttribute('width', '20px');
         //adding the icon to the target 
         topParent.appendChild(icon);
         
