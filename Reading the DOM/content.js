@@ -22,12 +22,7 @@ anchors.forEach((anchor)=>{
         topParent.appendChild(icon);
         
 
-        //Change the style
-        const childs = topParent.childNodes;
-        childs[0].style.width = width;
-        childs[0].style.float = position;
-        childs[1].style.width = width;
-        childs[1].style.float = position;
+        
     }
 });
 
