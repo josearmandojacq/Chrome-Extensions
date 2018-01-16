@@ -1,13 +1,13 @@
 
 let anchors = document.querySelectorAll('h3 a');
 let searchPattern = /https?\:\/\/(www.)(goertz|schuhcenter)\.(de)/g;
-let position = 'right';
-let width = '535px';
+
 
 
 anchors.forEach((anchor)=>{
     
     const anchorUrls  = anchor.getAttribute('href');
+    console.log(anchorUrls, anchor);
     let searched = anchorUrls.search(searchPattern);
 
     //check if the url matched which the one searched
