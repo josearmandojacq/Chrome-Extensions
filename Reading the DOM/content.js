@@ -1,5 +1,5 @@
-let anchors = document.querySelectorAll('h3 a');
-let searchPattern = /https?\:\/\/(www.)(goertz|schuhcenter)\.(de)/g;
+const anchors = document.querySelectorAll('h3 a');
+const searchPattern = /https?\:\/\/(www.)(goertz|schuhcenter)\.(de)/g;
 
 anchors.forEach((anchor) => {
 
@@ -12,13 +12,13 @@ anchors.forEach((anchor) => {
         const closestH3 = anchor.closest('h3');
 
         //creating a new container to put the elements to change
-        let elementsContainer = document.createElement('div');
+        const elementsContainer = document.createElement('div');
         elementsContainer.style.display = 'flex';
         elementsContainer.style.alignItems = 'center';
         elementsContainer.appendChild(closestH3);
 
         //Creating and styling the icon
-        let icon = document.createElement('img');
+        const icon = document.createElement('img');
         icon.src = 'https://image.flaticon.com/icons/svg/10/10164.svg';
         icon.style.width = '20px';
         icon.style.order = -1;
